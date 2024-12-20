@@ -1,0 +1,56 @@
+.filtercategory-container {
+    padding-inline: 10em;
+    cursor: pointer;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: 3em;
+
+    .fliter-images {
+        width: 10em;
+        height: 10em;
+        border: 6px solid rgba($color: $gray-color-text, $alpha: .3);
+        border-radius: 50%;
+        // overflow: hidden;
+        padding: 15px;
+
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    &.active {
+        .fliter-images {
+            position: relative;
+            border: 6px solid $main-color;
+
+            &::after {
+                content: '\2713';
+                position: absolute;
+                width: 1.5em;
+                height: 1.5em;
+                border-radius: 50%;
+                background-color: $main-color;
+                top: -.01em;
+                right: -.01em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $white-bg;
+                font-size: 1.3em;
+            }
+        }
+    }
+
+    span {
+        color: $dark-color;
+        margin-top: .9em;
+        display: inline-block;
+        font-weight: 500;
+        font-size: 1.4em;
+    }
+
+   
+}

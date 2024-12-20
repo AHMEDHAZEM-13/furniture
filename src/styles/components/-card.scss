@@ -1,0 +1,138 @@
+.card {
+    // width: 30rem;
+    height: 37rem;
+    padding: 1em;
+    background-color: #f4f5f4;
+    border-radius: .5em;
+    margin-top: 1em;
+    position: relative;
+    .card-badge{
+        width: 3em;
+        height: 3em;
+        position: absolute;
+        background: $main-color;
+        padding: .3em .5em;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: capitalize;
+        right: 1.25em;
+        top: 1.75em;
+        color: $dark-color;
+    }
+
+
+
+    .image {
+        width: 100%;
+        height: 20rem;
+        overflow: hidden;
+        border-radius: 1em;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.card-title {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    color: $dark-color;
+
+    a {
+        text-transform: capitalize;
+        text-decoration: none;
+        color: $dark-color;
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    h4 {
+        font-size: 1.2em;
+        font-weight: 400;
+        color: $gray-color-text ;
+    }
+
+}
+
+.card-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 1.5em;
+
+    .price {
+        display: flex;
+        align-items: center;
+        gap: .5em;
+
+        span {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: $dark-color;
+        }
+    }
+
+    .rate {
+        display: flex;
+        align-items: center;
+        gap: .5em;
+
+        span {
+            font-size: 1.2em;
+            font-weight: 400;
+            color: $dark-color;
+        }
+
+        svg {
+            fill: gold;
+        }
+    }
+}
+.card-btn{
+    width: 100%;
+    margin-top: 2em;
+    button{
+        width: 100%;
+        padding: .5em 1em;
+        border: 1px solid $main-color;
+        border-radius: .5em;
+        font-size: 1.2em;
+        font-weight: 600;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        background: transparent;
+        color: $main-color;
+       
+        &::after{
+            content: '';
+            transition: .4s ease-in-out;            
+            position: absolute;
+            width: 0;
+            height: 100%;
+            background: $main-color;
+            top: 0;
+            left: 0;
+            color: transparent;
+            color: white;
+            z-index: -1;
+        }
+        &:hover{
+            color: white;
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+}

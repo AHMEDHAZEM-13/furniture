@@ -1,0 +1,75 @@
+.bottom-section {
+    background: $button-color;
+    color: $dark-color;
+    padding: 1em 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+
+    .filter-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .filter-button {
+        border: none;
+        background: white;
+        color: $dark-color;
+        padding: .5em 1em;
+        border-radius: 1em;
+        cursor: pointer;
+    }
+
+    .filter-button:hover {
+        background: $main-color;
+        color: white;
+    }
+
+    .show-section {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        label {
+            color: $dark-color;
+            margin-right: 8px;
+            font-weight: 500;
+        }
+
+        select {
+            padding: 6px 12px;
+            border-radius: 5px;
+            border: 1px solid $dark-color;
+            cursor: pointer;
+            color: $gray-color-text;
+        }
+
+    }
+
+    .sort-section {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        label {
+            color: $dark-color;
+            margin-right: 8px;
+            font-weight: 500;
+        }
+
+        select {
+            padding: 6px 12px;
+            border-radius: 5px;
+            border: 1px solid $dark-color;
+            cursor: pointer;
+            color: $gray-color-text;
+        }
+    }
+
+    .showing-section {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}

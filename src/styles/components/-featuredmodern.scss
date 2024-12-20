@@ -1,0 +1,54 @@
+.featuredmodern {
+   padding-inline: 1em;
+
+}
+
+.swiper-option {
+
+   width: 100%;
+   height: 5vh;
+   margin-top: 2em;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   .swiper-arrow {
+      display: flex;
+      align-items: center;
+      gap: 1.5em;
+
+      .icon {
+         width: 3em;
+         height: 3em;
+         border-radius: 50%;
+         border: 1px solid rgba($color: $gray-color-text, $alpha: .10);
+         background-color: $button-color;
+         color: $dark-color;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         cursor: pointer;
+         transition: .4s ease-in-out;
+
+         &:hover {
+            background-color: $main-color;
+            color: #fff;
+         }
+      }
+
+
+
+   }
+
+   .swiper--scrollbar {
+      width: 70%;
+      height: 3px;
+      background: rgba($color: $button-color, $alpha: 1.0);
+      border: 1px;
+      border-radius: 5px;
+      .swiper-scrollbar-drag{
+         background-color: $main-color;
+         height: 100%;
+      }
+   }
+}
